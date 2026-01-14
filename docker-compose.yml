@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  rust-env:
+    build: .
+    container_name: rust-learning-env
+    ports:
+      - "8080:8080"  # InstantWebServer用
+    volumes:
+      - ./sources:/app/sources  # ホスト側の sources フォルダをマウント
+      - ./running_env:/app/running_env  # 実行環境もマウント
+    environment:
+      - RUST_BACKTRACE=1
+    stdin_open: true
+    tty: true
+    command: bash  # 対話的に使いたい場合はbash
