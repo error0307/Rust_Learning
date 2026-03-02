@@ -12,6 +12,14 @@ Rust_Learning/
 ├── docker-compose.yml        # Docker Compose configuration
 ├── copy_to_running_env.sh    # Source code execution script
 │
+├── docs/                     # Learning notes and documentation
+│   ├── 01_ResultType.md
+│   ├── 02_Owner.md
+│   ├── 03_MultiThread.md
+│   ├── 04_AsyncProgram.md
+│   ├── 05_Program_Args.md
+│   └── img/
+│
 ├── running_env/              # Integrated execution environment
 │   ├── Cargo.toml
 │   ├── Cargo.lock
@@ -21,6 +29,7 @@ Rust_Learning/
 └── sources/                  # Learning sample code
     ├── Args_BuilderPattern/          # CLI argument parsing (Builder pattern)
     ├── Args_DerivePattern/           # CLI argument parsing (Derive pattern)
+    ├── Args_DerivePattern_2/         # CLI argument parsing with type conversion
     ├── AsyncMove/                    # async/await basics
     ├── Async_Await_Retly/            # Asynchronous retry handling
     ├── ErrorHandling/                # Error handling
@@ -114,8 +123,7 @@ For more detailed Docker usage, please refer to [DOCKER_README.md](DOCKER_README
 | ErrorHandling | Result type and error handling | ⭐ |
 | Trait_Impl | Trait implementation and usage | ⭐⭐ |
 | Args_BuilderPattern | CLI argument parsing with clap (Builder) | ⭐⭐ |
-| Args_DerivePattern | CLI argument parsing with clap (Derive) | ⭐⭐ |
-| MultiThread_Program_with_SharedMemory | Shared memory with Arc and Mutex | ⭐⭐ |
+| Args_DerivePattern | CLI argument parsing with clap (Derive) | ⭐⭐ || Args_DerivePattern_2 | CLI with clap type conversion (i32, etc.) | ⭐⭐ || MultiThread_Program_with_SharedMemory | Shared memory with Arc and Mutex | ⭐⭐ |
 | MultiThread_Program_with_SharedMemory_2 | Thread control with flags | ⭐⭐ |
 | MultiThread_with_MessagePassing | Message passing via channels | ⭐⭐ |
 | MultiThread_with_MessagePassing2 | Bidirectional message passing | ⭐⭐⭐ |
